@@ -1,1 +1,1 @@
-# aulaJS
+# Repositorio para o curso de JavaScript da ORIGAMID
