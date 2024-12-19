@@ -1,39 +1,17 @@
-const imgs = document.querySelectorAll('img');
-
-let i = 0;
-
-/**imgs.forEach(function(item, index, array){
-    console.log(item, index, array);
-})*/
-
-/**
- * forEach é um metodo de Array, alguns objetos array-like possuem este metodo. Caso não possua, o ideial é transformá-los em uma array
- */
-
-const titulos = document.getElementsByClassName('titulo');
-const titulosArray = Array.from(titulos);
-
-titulosArray = forEach(function(item){
-    console.log(item);
-});
-
-/**
- * Arrow function
- * Sintaxe curta em relação a FUNCTION EXPRESSION. Basta remover a palavra chave function e adicionar a fat arrow => após os argumentos.
- */
-
-const imgs2 = document.querySelectorAll('img');
-
-//argumento unico não precisa de parenteses
-imgs2.forEach(item => console.log(item));
-
-//multiplos argumentos precisam de parenteses 
-imgs2.forEach((item, index) => {
-    console.log(item, index)
-});
-
-//sem argumentos precisa dos parenteses, mesmo vazio
-let j = 0;
-imgs2.forEach(()=>{
-    console.log(i++);
-});
+//Retorne no console todas as imagens do site
+const imagensAnimal = document.getElementsByTagName('img');
+console.log(imagensAnimal);
+// Retorne no console apenas as imagens que começaram com a palavra imagem
+const fotosAnimais = document.querySelectorAll('img[src^="img/imagem"]');
+console.log(fotosAnimais);
+// Selecione todos os links internos(onde o href começa com #)
+const links = document.querySelectorAll('[href^="#"]');
+console.log(links);
+// Selecione o primeiro h2 dentro de animais-descrição 
+const primeiroH2 = document.querySelector('.animais_descricao');
+const h2animais = primeiroH2.querySelector('h2');
+console.log(primeiroH2);
+console.log(h2animais);
+// Selecione o último p do site
+const ultimoP = document.querySelectorAll('p');
+console.log(ultimoP[ultimoP.length-1]);
